@@ -1,0 +1,41 @@
+{
+    "bot": {
+        "token": "",
+        "database": "",
+        "prefix": "e!",
+        "presence": {
+            "status": "idle",
+            "type": "ActivityType.Watching",
+            "text": "Ekmekleri izliyor!"
+        },
+        "colors": {
+            "red": "#ff0000",
+            "yellow": "#ffe100",
+            "green": "#00ff33"
+        }
+    },
+
+    "points": {
+        "punishments": {
+            "ban": 50,
+            "kick": 30,
+            "timeout": 10
+        }
+    },
+
+    "roles": {
+        "staffs": {
+            "owner": "1148665974812328110",
+            "admin": "1148665976355831908",
+            "staff3": "1148665977135972374",
+            "staff2": "1148665978109042860",
+            "staff1": "1148665979954544662"
+        }
+    },
+
+    "channels": {
+        "logs": {
+            "ban": "1148666185920028672"
+        }
+    }
+}

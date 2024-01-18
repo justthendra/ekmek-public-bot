@@ -1,0 +1,25 @@
+{
+  "name": "justify",
+  "version": "1.0.0",
+  "description": "Justify discord server private bot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon bot.js"
+  },
+  "keywords": [
+    "Justify"
+  ],
+  "author": "Thendra",
+  "license": "MIT",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "discord.js": "^14.11.0",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "mongoose": "^8.1.0",
+    "ms": "^2.1.3",
+    "path": "^0.12.7"
+  }
+}
