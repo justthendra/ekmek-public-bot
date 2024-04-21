@@ -15,29 +15,29 @@ module.exports = {
 
         if(!kişi) return message.reply("❌ Bu kişi sunucuda yok veya bir kişiyi etiketlemedin!")
         
-        const kanal = "1105873286044328067";
+        const kanal = "";
         const kanall = message.guild.channels.cache.find(c => c.id === kanal)
 
         try {
 
         const sucembed = new EmbedBuilder()
-           .setDescription(`**${kişi}** isimli kullanıcı **Justify**'den \`${sebep}\` sebebi ile atıldı.`)
+           .setDescription(`**${kişi}** isimli kullanıcı **Ekmek**'den \`${sebep}\` sebebi ile atıldı.`)
            .setColor("#00B50C")
            .setFooter({
-            text: `Justify | Kick`,
+            text: `Ekmek | Kick`,
             iconURL: client.user.displayAvatarURL()
            })
            .setTimestamp()
            message.channel.send({ embeds: [sucembed] })
            const logembed = new EmbedBuilder()
-           .setDescription(`**${kişi}** isimli kullanıcı **Justify**'den \`${sebep}\` sebebi ile atıldı.`)
+           .setDescription(`**${kişi}** isimli kullanıcı **Ekmek**'den \`${sebep}\` sebebi ile atıldı.`)
            .addFields(
             { name: "Yetkili", value: `${message.author}`}
             )
            .setThumbnail(kişi.displayAvatarURL())
            .setColor("#00B50C")
            .setFooter({
-            text: `Justify | LOGS`,
+            text: `Ekmek | LOGS`,
             iconURL: client.user.displayAvatarURL()
            })
            .setTimestamp()
