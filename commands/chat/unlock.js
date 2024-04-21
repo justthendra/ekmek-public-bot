@@ -27,7 +27,7 @@ module.exports = {
       )
       .setColor("#00B50C")
       .setFooter({
-        text: `Justify | Kanal Kilit`,
+        text: `Ekmek | Kanal Kilit`,
         iconURL: client.user.displayAvatarURL(),
       })
       .setTimestamp();
