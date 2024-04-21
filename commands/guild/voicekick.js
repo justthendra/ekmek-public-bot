@@ -17,7 +17,7 @@ module.exports = {
     .setDescription(`${user} isimli kullanıcı kanaldan atıldı.`)
     .setColor("#00B50C")
     .setFooter({
-        text: `Justify | Sesli At`,
+        text: `Ekmek | Sesli At`,
         iconURL: client.user.displayAvatarURL()
     })
     .setTimestamp()
