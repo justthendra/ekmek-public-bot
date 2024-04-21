@@ -26,7 +26,7 @@ npm i discord.js mongoose
 - I. [Visual Studio Code](https://code.visualstudio.com/) indirin.
 - II. [node.js](https://nodejs.org/en/download/) indirin.
 - III. Komut istemcisini açın `node -v` komutu ile node.js sürümünün **16.9.0** veya üstünü yüklediğinizden emin olun.
-- IV. [Projeyi İndirin](https://github.com/justthendra/discord.js-v14-moderation-template) ve klasörü .zip klasöründen normal bir klasöre çıkarın.
+- IV. [Projeyi İndirin](https://github.com/justthendra/ekmek-public-bot) ve klasörü .zip klasöründen normal bir klasöre çıkarın.
 - V. Klasörü yeni bir VSCode sekmesinde açın.
 - VI. `src/config.json` dosyasına gidin ve dosyayı düzenleyin.
 - VII. Terminali açın ve `node .\src\bot.js` veya `node .` yazarak botu başlatın.
