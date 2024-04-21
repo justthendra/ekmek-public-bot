@@ -1,4 +1,5 @@
 const { EmbedBuilder } = require("discord.js");
+const config = require('../../config.json')
 
 module.exports = {
   name: "unmute",
@@ -9,7 +10,7 @@ module.exports = {
     if(!message.member.permissions.has("MuteMembers")) return message.channel.send("You are not authorized to use this command.");
 
     const etiket = message.mentions.members.first()
-    const kanal = "1105873257829249104";
+    const kanal = config.channels.logs.mute;
     const kanall = message.guild.channels.cache.find(c => c.id === kanal)
 
     const hataEmb = new EmbedBuilder()
@@ -23,7 +24,7 @@ module.exports = {
         .setAuthor({name: "Bir kullanıcının susturması kaldırıldı.", iconURL: etiket.displayAvatarURL()})
         .setDescription(`${etiket} isimli kullanıcının susturması kaldırıldı.`)
         .setFooter({
-            text: `Justify | Unmute`,
+            text: `Ekmek | Unmute`,
             iconURL: message.author.displayAvatarURL()
            })
         .setTimestamp()
@@ -37,7 +38,7 @@ module.exports = {
             { name: "Yetkili", value: `${message.author}`}
         )
         .setFooter({
-            text: `Justify | LOGS`,
+            text: `Ekmek | LOGS`,
             iconURL: message.author.displayAvatarURL()
            })
         .setTimestamp()
