@@ -51,7 +51,7 @@ module.exports = {
         const banneden = new EmbedBuilder()
         .setDescription(`**${user.tag}** isimli kullanııcı **\`${reason}\`** sebebi ile sunucudan yasaklanmış.`)
         .setFooter({
-            text: `Justify | Ban Kontrol`,
+            text: `Ekmek | Ban Kontrol`,
             iconURL: message.author.displayAvatarURL()
         })
         .setColor("#FF0000")
