@@ -1,5 +1,6 @@
 const { EmbedBuilder } = require("discord.js");
 const ms = require('ms');
+const config = require('../../config.json')
 
 module.exports = {
   name: "mute",
@@ -10,7 +11,7 @@ module.exports = {
     if(!message.member.permissions.has("MuteMembers")) return message.channel.send("You are not authorized to use this command.");
 
     const etiket = message.mentions.members.first()
-    const kanal = "1105873257829249104";
+    const kanal = config.channels.logs.mute;
     const kanall = message.guild.channels.cache.find(c => c.id === kanal)
 
     const zaman = args[1];
@@ -37,7 +38,7 @@ module.exports = {
     )
     .setTimestamp()
     .setFooter({
-        text: `Justify | Mute`,
+        text: `Ekmek | Mute`,
         iconURL: client.user.displayAvatarURL()
        })
     .setColor("Green")
@@ -47,7 +48,7 @@ module.exports = {
         .setAuthor({name: "Bir kullanıcının susturması kaldırıldı.", iconURL: etiket.displayAvatarURL()})
         .setDescription(`Sürenin dolması sebebi ile ${etiket} isimli kullanıcının susturması kaldırıldı.`)
         .setFooter({
-            text: `Justify | LOGS`,
+            text: `Ekmek | LOGS`,
             iconURL: client.user.displayAvatarURL()
            })
         .setTimestamp()
@@ -62,7 +63,7 @@ module.exports = {
         { name: "Yetkili", value: `${message.author}`}
     )
     .setFooter({
-        text: `Justify | LOGS`,
+        text: `Ekmek | LOGS`,
         iconURL: client.user.displayAvatarURL()
        })
     .setTimestamp()
