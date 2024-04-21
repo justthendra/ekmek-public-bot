@@ -18,7 +18,7 @@ if(!message.member.permissions.has("ManageMessages")) return message.reply("Bu k
     .setDescription(`${eleman} isimli kullanıcı ${kanal} kanalına taşındı.`)
     .setColor("#00B50C")
     .setFooter({
-        text: `Justify | Taşı`,
+        text: `Ekmek | Taşı`,
         iconURL: client.user.displayAvatarURL()
     })
     .setTimestamp()
