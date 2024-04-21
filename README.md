@@ -2,7 +2,7 @@
 <h5>Discord.js v14 kütüphanesi ile yapılmış gelişmiş Discord Moderasyon botu.</h5>
 
 <h2>Ekmek Moderasyon Botu</h2>
-Tamamı discord.js sürüm 14 ve discord.js-v14-helper ile yapıldı. Bu proje MongoDB'nin veritabanına bağlanmasını gerektiriyor, bu nedenle bir MongoDB URI'si aldığınızdan emin olun! Botunuzu geliştirmek için istediğiniz kadar komut oluşturabilirsiniz, yeter ki botunuzun çıldırmayacağından emin olun!
+Tamamı discord.js v14 ve discord.js-v14-helper ile yapıldı. Bu proje MongoDB'nin veritabanına bağlanmasını gerektiriyor, bu nedenle bir MongoDB URI'si aldığınızdan emin olun! Botunuzu geliştirmek için istediğiniz kadar komut oluşturabilirsiniz, yeter ki botunuzun çıldırmayacağından emin olun!
 
 #### Uyarı
 Bu Proje ekmek sunucusuna özel yapılmıştır. Son hali `50 Star` olduğunda paylaşılacaktır.
