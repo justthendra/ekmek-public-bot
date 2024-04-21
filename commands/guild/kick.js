@@ -1,5 +1,6 @@
 const { EmbedBuilder } = require('discord.js');
 const delay = (msec) => new Promise((resolve) => setTimeout(resolve, msec));
+const config = require('../../config.json');
 
 module.exports = {
     name: "kick",
@@ -15,7 +16,7 @@ module.exports = {
 
         if(!kişi) return message.reply("❌ Bu kişi sunucuda yok veya bir kişiyi etiketlemedin!")
         
-        const kanal = "";
+        const kanal = config.channels.logs.ban;
         const kanall = message.guild.channels.cache.find(c => c.id === kanal)
 
         try {
