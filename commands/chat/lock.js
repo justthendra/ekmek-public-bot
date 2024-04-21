@@ -21,7 +21,7 @@ module.exports = {
     .setDescription(`${message.channel} isimli kanal kilitlendi. Artık kimse kanala mesaj atamaz`)
     .setColor("#00B50C")
     .setFooter({
-        text: `Justify | Kanal Kilitleme`,
+        text: `Ekmek | Kanal Kilitleme`,
         iconURL: client.user.displayAvatarURL()
     })
     .setTimestamp()
