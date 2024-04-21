@@ -1,5 +1,6 @@
 const { EmbedBuilder } = require("discord.js");
 const delay = (msec) => new Promise((resolve) => setTimeout(resolve, msec));
+const config = require('../../config.json')
 
 module.exports = {
   name: "unban",
@@ -7,7 +8,7 @@ module.exports = {
   aliases: [],
   run: async (client, message, args) => {
     const kişi = args[0];
-    const kanal = "1105873286044328067";
+    const kanal = config.channels.logs.ban;
     const kanall = message.guild.channels.cache.find((c) => c.id === kanal);
 
     if (!message.member.permissions.has("BanMembers"))
@@ -20,7 +21,7 @@ module.exports = {
         "ID'ye sahip kullanıcının sunucu yasağı kaldırıldı. Kullanıcı artık sunucuya girebilir."
       )
       .setFooter({
-        text: `Justify | Unban`,
+        text: `Ekmek | Unban`,
         iconURL: client.user.displayAvatarURL(),
       })
       .setColor("#00B50C")
@@ -33,7 +34,7 @@ module.exports = {
       .addFields({ name: "Yetkili", value: `${message.author}` })
       .setColor("#00B50C")
       .setFooter({
-        text: `Justify | LOGS`,
+        text: `Ekmek | LOGS`,
         iconURL: client.user.displayAvatarURL(),
       })
       .setTimestamp();
